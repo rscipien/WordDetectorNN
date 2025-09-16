@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "worddetectornn"
+version = "0.1.0"
+description = "Neural network word detector"
+authors = [
+    { name="Your Name", email="you@example.com" }
+]
+readme = "README.md"
+requires-python = ">=3.9"
+
+dependencies = [
+    "numpy",
+    "opencv-python",
+    "torch",  # if you use PyTorch
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
